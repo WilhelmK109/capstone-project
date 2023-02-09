@@ -25,6 +25,10 @@ body {
   background: rgba(255, 255, 255, 0.24);
 }
 
+.desktop-top-nav {
+  display: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -86,7 +90,7 @@ body {
 }
 
 .container {
-  margin: auto 30px;
+  margin-left: 60px;
   padding-top: 80px;
 }
 
@@ -106,6 +110,7 @@ body {
 
 .container h3 {
   font-size: 1.5rem;
+  font-weight: 600;
   color: var(--dark);
 }
 
@@ -117,6 +122,7 @@ body {
   padding-right: 25px;
   padding-left: 10px;
   border: 3px solid var(--light);
+  width: 90%;
 }
 
 .timestamp {
@@ -124,18 +130,21 @@ body {
 }
 
 .program {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
   background: var(--dark);
   background-image: url("img/Background.png");
   background-repeat: repeat;
-  background-size: 130%;
+  width: 100%;
+  background-size: 100%;
 }
 
 .set-margin {
   display: grid;
-  margin: 30px 30px 30px 30px;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 30px;
   row-gap: 20px;
 }
 
@@ -145,13 +154,26 @@ body {
   color: var(--light);
 }
 
+.d-flex-btn {
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .card {
   display: flex;
-  align-items: center;
   background: var(--dark);
-  text-align: center;
+  align-items: center;
+  text-align: start;
   box-shadow: var(--shadow);
-  width: 90%;
+  width: 95%;
 }
 
 .card .fas {
@@ -168,14 +190,14 @@ body {
 
 .card h3 {
   color: var(--primary);
-  text-align: center;
+  text-align: start;
   width: 120px;
   margin-right: 25px;
 }
 
 .card p {
   color: var(--light);
-  text-align: center;
+  text-align: start;
   width: 120px;
 }
 
@@ -189,6 +211,18 @@ body {
   align-items: center;
 }
 
+.desktop-btn {
+  background: none;
+  font-size: 1rem;
+  padding: 1.5rem 2rem;
+  color: var(--light);
+  transition: 0.4s;
+  border: 1px solid var(--light);
+  align-items: center;
+  text-decoration: underline;
+  display: none;
+}
+
 .main-program {
   margin: auto 30px auto 30px;
 }
@@ -198,14 +232,9 @@ body {
   text-align: center;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 100vh;
-}
-
 .main-program h5 {
   color: var(--primary);
+  text-align: left;
 }
 
 .main-program p {
@@ -238,6 +267,12 @@ body {
   text-align: center;
 }
 
+.speakers-image {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+
 .speaker-pic {
   width: 120px;
   height: 120px;
@@ -260,12 +295,28 @@ hr {
   width: 10px;
 }
 
+.hide-speaker-btn {
+  width: 95%;
+  height: 40px;
+  margin-left: 2.5%;
+  font-size: 1rem;
+}
+
+.desktop-partners,
+.desktop-footer {
+  display: none;
+}
+
 /* ------- about us page styling --------- */
 .about {
   background: rgba(221, 221, 218, 0.24);
 }
 
 .about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 72px 30px 0% 30px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -278,6 +329,7 @@ hr {
 
 .about-us h1 {
   font-size: 2.5rem;
+  text-align: center;
   background: linear-gradient(95deg, var(--primary) 0%, rgb(255, 111, 0) 40%);
   -webkit-text-fill-color: transparent;
   background-clip: content-box;
@@ -286,6 +338,11 @@ hr {
 
 .about-us p {
   line-height: 1.5rem;
+}
+
+.about-us-description {
+  background: var(--light);
+  padding: 15px;
 }
 
 .contact-us p {
@@ -332,7 +389,8 @@ hr {
   text-align: center;
 }
 
-.convention-1, .convention-2 {
+.convention-1,
+.convention-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -355,15 +413,15 @@ hr {
   height: 60px;
   margin-right: 25px;
   margin-bottom: 20px;
-
 }
 
-footer {
+.about-us-footer {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-footer p {
+.about-us-footer p {
   font-size: 0.8rem;
 }
 
@@ -380,6 +438,10 @@ footer p {
     transition: 0.3s;
     top: 72px;
     left: -100%;
+  }
+
+  .deskto-top-nav {
+    display: none;
   }
 
   .nav-link {
@@ -412,23 +474,44 @@ footer p {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
-  .program {
-    width: 100vh;
-  }
-
-  .cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100vh;
-  }
 }
 
 /* ---------desktop media queries...... */
 @media only screen and (min-width: 768px) {
+  .deskto-top-nav {
+    background-color: #272a31;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    z-index: 1000;
+  }
+
+  .social-media {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-right: 130px;
+  }
+
+  .social-media-item {
+    text-decoration: none;
+    color: #d3d3d3;
+    padding: 0% 10px;
+  }
+
+  .social-media-div {
+    text-align: center;
+    flex-wrap: nowrap;
+  }
+
   .navbar {
     padding: 0% 10%;
     justify-content: space-between;
+    top: 20px;
   }
 
   .hamburger {
@@ -444,39 +527,111 @@ footer p {
     display: flex;
   }
 
+  .convention-link {
+    margin-top: 8px;
+  }
+
+  .foursq-btn button {
+    background: var(--light);
+    border: 2px solid var(--primary);
+    padding: 12px;
+  }
+
   .container h1 {
     margin-top: 70px;
+  }
+
+  .about-us-description {
+    width: 80%;
   }
 
   .d-flex {
     font-size: 1.5rem;
   }
 
+  .btn {
+    display: none;
+  }
+
   .d-flex .btn {
     font-size: 1.1rem;
+  }
+
+  .set-margin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 100vh;
+    column-gap: 10px;
+    align-content: center;
+    width: auto;
   }
 
   .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
     font-size: 1rem;
-    width: 300px;
+    width: 200px;
+  }
+
+  .fa-solid {
+    margin-top: 5px;
+  }
+
+  .card h3,
+  .card p {
+    text-align: center;
+    margin: 5px 0% 5px 0%;
   }
 
   .card:hover {
     border: 2px solid var(--light);
   }
 
+  .speakers-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+  }
+
+  .speakers-image {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hide-speaker-btn {
+    display: none;
+  }
+
   .partners-div {
     display: flex;
     flex-direction: row;
+  }
+
+  .desktop-partners,
+  .desktop-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-btn {
+    background: none;
+    font-size: 1rem;
+    padding: 1.5rem 2rem;
+    color: var(--light);
+    transition: 0.4s;
+    border: 1px solid var(--light);
+    align-items: center;
+    text-decoration: underline;
+    display: block;
   }
 }
