@@ -72,7 +72,7 @@ HTML, CSS AND JAVASCRIPT
 
 ## 🚀 Project presentation video <a name="project-presentation"></a>
 
-- [Video Link](https://www.loom.com/share/f8d070d5fbbb44539ab031bb171a551f)
+- [Video Link](https://www.loom.com/share/0702dde6b8814e24b9b60b3b84852f69)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
