@@ -35,7 +35,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 72px;
-  background-color: var(--light);
+  background-color: lavenderblush;
   position: fixed;
   z-index: 100;
 }
@@ -135,7 +135,7 @@ body {
   background-image: url("img/Background.png");
   background-repeat: repeat;
   width: 100%;
-  background-size: 100%;
+  background-size: 130%;
 }
 
 .set-margin {
@@ -169,7 +169,7 @@ body {
 
 .card {
   display: flex;
-  background: var(--dark);
+  background: rgba(104, 104, 104, 0.2);
   align-items: center;
   text-align: start;
   box-shadow: var(--shadow);
@@ -309,7 +309,7 @@ hr {
 
 /* ------- about us page styling --------- */
 .about {
-  background: rgba(221, 221, 218, 0.24);
+  background: lavenderblush;
 }
 
 .about-us {
@@ -403,6 +403,12 @@ hr {
   color: var(--light);
 }
 
+.convention-1 h3,
+.convention-2 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 3px;
+}
+
 .partners-div {
   display: flex;
   justify-content: space-between;
@@ -494,12 +500,13 @@ hr {
     text-align: center;
     justify-content: flex-end;
     margin-top: 5px;
-    margin-right: 130px;
+    margin-right: 150px;
   }
 
   .social-media-item {
     text-decoration: none;
     color: #d3d3d3;
+    font-size: 0.8rem;
     padding: 0% 10px;
   }
 
@@ -509,6 +516,7 @@ hr {
   }
 
   .navbar {
+    background: var(--light);
     padding: 0% 10%;
     justify-content: space-between;
     top: 20px;
@@ -565,7 +573,7 @@ hr {
 
   .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 10px;
     align-content: center;
     width: auto;
@@ -633,5 +641,10 @@ hr {
     align-items: center;
     text-decoration: underline;
     display: block;
+  }
+
+  .past-conventions {
+    display: flex;
+    column-gap: 25px;
   }
 }
