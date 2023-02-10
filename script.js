@@ -37,6 +37,18 @@ const featuredSpeakers = [
     title: 'Leader, Foursquare Church Otjomuise, Namibia',
     experience: 'Has five years of ministering the good news of God',
   },
+  {
+    image: 'img/rev-sam-aboyeji.jpg',
+    name: 'Rev Sam Aboyeji',
+    title: 'Overseer, Foursquare Church, Nigeria',
+    experience: 'Has fifteen years of ministering the good news of God',
+  },
+  {
+    image: 'img/br-wilhelm.jpg',
+    name: 'Br Wilhelm Kamulunga',
+    title: 'Leader, Foursquare Church Otjomuise, Namibia',
+    experience: 'Has five years of ministering the good news of God',
+  },
 ];
 
 function CreateSpeaker(speaker) {
@@ -80,7 +92,9 @@ function CreateSpeaker(speaker) {
 }
 
 const speakersArray = [];
-for (let i = 0; i < featuredSpeakers.length; i += 1) {
-  const ftSpeaker = CreateSpeaker(featuredSpeakers[i]);
-  speakersArray.push(ftSpeaker);
+window.onload = () => {
+  for (let i = 0; i < featuredSpeakers.length; i += 1) {
+    const ftSpeaker = CreateSpeaker(featuredSpeakers[i]);
+    speakersArray.push(ftSpeaker);
+  }
 }
