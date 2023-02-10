@@ -32,28 +32,26 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 
-HTML, CSS AND JAVASCRIPT
-
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">HTML</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://expressjs.com/">CSS</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://www.postgresql.org/">JAVASCRIPT</a></li>
   </ul>
 </details>
 
@@ -66,7 +64,7 @@ HTML, CSS AND JAVASCRIPT
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://wilhelmk109.github.io/my-portfolio-website/)
+- [Live Demo Link](https://wilhelmk109.github.io/capstone-project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
