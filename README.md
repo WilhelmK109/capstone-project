@@ -70,7 +70,7 @@
 
 ## 🚀 Project presentation video <a name="project-presentation"></a>
 
-- [Video Link](https://www.loom.com/share/0702dde6b8814e24b9b60b3b84852f69)
+- [Video Link](https://www.loom.com/share/2b170b7a185d4c6498d9b90781415881)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
