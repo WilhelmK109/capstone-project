@@ -97,4 +97,4 @@ window.onload = () => {
     const ftSpeaker = CreateSpeaker(featuredSpeakers[i]);
     speakersArray.push(ftSpeaker);
   }
-}
+};
