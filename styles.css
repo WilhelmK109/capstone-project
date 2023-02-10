@@ -1,0 +1,650 @@
+/* ======= CSS Variable ======= */
+:root {
+  --primary: #ec5242;
+  --dark: #272a31;
+  --grey: #d3d3d3;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  box-sizing: content-box;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.desktop-top-nav {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 72px;
+  background-color: lavenderblush;
+  position: fixed;
+  z-index: 100;
+}
+
+.logo {
+  margin-left: 60px;
+  display: none;
+}
+
+.logo img {
+  width: 120px;
+  height: 70px;
+  border: 1px solid var(--light);
+  border-radius: 50px;
+}
+
+.nav-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--dark);
+  padding: 1rem;
+  display: block;
+}
+
+.hamburger {
+  margin-left: 30px;
+  display: block;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--dark);
+}
+
+.home {
+  background: lavenderblush;
+}
+
+.container {
+  margin-left: 60px;
+  padding-top: 80px;
+}
+
+.container .theme {
+  font-size: 1.7rem;
+  color: var(--primary);
+  margin-bottom: -5%;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(95deg, var(--primary) 0%, rgb(255, 111, 0) 30%);
+  -webkit-text-fill-color: transparent;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+}
+
+.container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.container .description {
+  font-size: 1.1rem;
+  color: var(--dark);
+  font-style: normal;
+  line-height: 1.5;
+  padding-right: 25px;
+  padding-left: 10px;
+  border: 3px solid var(--light);
+  width: 90%;
+}
+
+.timestamp {
+  color: var(--dark);
+}
+
+.program {
+  justify-content: center;
+  background: var(--dark);
+  background-image: url("img/Background.png");
+  background-repeat: repeat;
+  width: 100%;
+  background-size: 130%;
+}
+
+.set-margin {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0% auto;
+  row-gap: 20px;
+}
+
+.set-margin .d-flex {
+  display: flex;
+  justify-content: center;
+  color: var(--light);
+}
+
+.d-flex-btn {
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  background: rgba(104, 104, 104, 0.2);
+  align-items: center;
+  text-align: start;
+  box-shadow: var(--shadow);
+  width: 90%;
+  margin: 10px auto;
+}
+
+.card .fas {
+  color: var(--light);
+  text-align: center;
+  width: 100px;
+}
+
+.card .fa-solid {
+  color: var(--light);
+  text-align: center;
+  width: 100px;
+}
+
+.card h3 {
+  color: var(--primary);
+  text-align: start;
+  width: 120px;
+  margin-right: 25px;
+}
+
+.card p {
+  color: var(--light);
+  text-align: start;
+  width: 120px;
+}
+
+.btn {
+  background: var(--primary);
+  font-size: 1rem;
+  padding: 1.5rem 2rem;
+  color: var(--light);
+  transition: 0.4s;
+  border: none;
+  align-items: center;
+}
+
+.desktop-btn {
+  background: none;
+  font-size: 1rem;
+  padding: 1.5rem 2rem;
+  color: var(--light);
+  transition: 0.4s;
+  border: 1px solid var(--light);
+  align-items: center;
+  text-decoration: underline;
+  display: none;
+}
+
+.main-program {
+  margin: auto 30px auto 30px;
+}
+
+.main-program h4 {
+  color: var(--light);
+  text-align: center;
+}
+
+.main-program h5 {
+  color: var(--primary);
+  text-align: left;
+}
+
+.main-program p {
+  color: var(--light);
+  width: auto;
+}
+
+.speakers {
+  width: 100vw;
+  height: auto;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.speakers-list {
+  display: grid;
+  grid-template-columns: 0.95fr;
+  padding-top: 10px;
+}
+
+.speaker-li {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.featured-speakers {
+  text-align: center;
+}
+
+.speakers-image {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.speaker-pic {
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+}
+
+.p {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--primary);
+  margin-top: -10px;
+}
+
+.exp {
+  font-size: 0.8rem;
+  color: var(--dark);
+}
+
+hr {
+  width: 10px;
+}
+
+.hide-speaker-btn {
+  width: 95%;
+  height: 40px;
+  margin-left: 2.5%;
+  font-size: 1rem;
+}
+
+.desktop-partners,
+.desktop-footer {
+  display: none;
+}
+
+/* ------- about us page styling --------- */
+.about {
+  background: lavenderblush;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 72px 30px 0% 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about-us .theme {
+  font-size: 1.7rem;
+  color: var(--primary);
+}
+
+.about-us h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  background: linear-gradient(95deg, var(--primary) 0%, rgb(255, 111, 0) 40%);
+  -webkit-text-fill-color: transparent;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+}
+
+.about-us p {
+  line-height: 1.5rem;
+}
+
+.about-us-description {
+  background: var(--light);
+  padding: 15px;
+}
+
+.contact-us p {
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+#partners {
+  background: var(--dark);
+  width: 100%;
+  height: auto;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners h3 {
+  color: var(--light);
+}
+
+.logo2 {
+  margin-left: 50px;
+  margin-right: 30px;
+}
+
+.logo2 img {
+  width: 120px;
+  height: 70px;
+  border: 1px solid var(--light);
+  border-radius: 50px;
+}
+
+.past-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.past-projects p {
+  text-align: center;
+}
+
+.convention-1,
+.convention-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 300px;
+  text-align: center;
+  background-image: url(img/past-project.png);
+  margin-bottom: 20px;
+  color: var(--light);
+}
+
+.convention-1 h3,
+.convention-2 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 3px;
+}
+
+.partners-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partner-logo img {
+  width: 100px;
+  height: 60px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+.about-us-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-footer p {
+  font-size: 0.8rem;
+}
+
+/* --------- mobile media queries...... */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    gap: 3%;
+    background-color: var(--light);
+    width: 100vw;
+    height: 72vh;
+    text-align: left;
+    transition: 0.3s;
+    top: 72px;
+    left: -100%;
+  }
+
+  .deskto-top-nav {
+    display: none;
+  }
+
+  .nav-link {
+    color: #000;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+    font-size: 28px;
+    border: none;
+    border-bottom: 1px solid #979493;
+    margin: 0% 5%;
+  }
+
+  .nav-menu.active {
+    left: -5%;
+  }
+
+  .nav-link.active {
+    top: 0%;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* ---------desktop media queries...... */
+@media only screen and (min-width: 768px) {
+  .deskto-top-nav {
+    background-color: #272a31;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    z-index: 1000;
+  }
+
+  .social-media {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-right: 150px;
+  }
+
+  .social-media-item {
+    text-decoration: none;
+    color: #d3d3d3;
+    font-size: 0.8rem;
+    padding: 0% 10px;
+  }
+
+  .social-media-div {
+    text-align: center;
+    flex-wrap: nowrap;
+  }
+
+  .navbar {
+    background: var(--light);
+    padding: 0% 10%;
+    justify-content: space-between;
+    top: 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    margin-left: 60px;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .convention-link {
+    margin-top: 8px;
+  }
+
+  .foursq-btn button {
+    background: var(--light);
+    border: 2px solid var(--primary);
+    padding: 12px;
+  }
+
+  .container h1 {
+    margin-top: 70px;
+  }
+
+  .about-us-description {
+    width: 80%;
+  }
+
+  .d-flex {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .d-flex .btn {
+    font-size: 1.1rem;
+  }
+
+  .set-margin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    align-content: center;
+    width: auto;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 160px;
+  }
+
+  .fa-solid {
+    margin-top: 5px;
+  }
+
+  .card h3,
+  .card p {
+    text-align: center;
+    margin: 5px 0% 5px 0%;
+  }
+
+  .card:hover {
+    border: 2px solid var(--light);
+  }
+
+  .speakers-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+  }
+
+  .speakers-image {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hide-speaker-btn {
+    display: none;
+  }
+
+  .partners-div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .desktop-partners,
+  .desktop-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-btn {
+    background: none;
+    font-size: 1rem;
+    padding: 1.5rem 2rem;
+    color: var(--light);
+    transition: 0.4s;
+    border: 1px solid var(--light);
+    align-items: center;
+    text-decoration: underline;
+    display: block;
+  }
+
+  .past-conventions {
+    display: flex;
+    column-gap: 25px;
+  }
+}
