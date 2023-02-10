@@ -144,7 +144,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 90%;
-  margin: 30px;
+  margin: 0% auto;
   row-gap: 20px;
 }
 
@@ -161,7 +161,6 @@ body {
 .cards {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -173,7 +172,8 @@ body {
   align-items: center;
   text-align: start;
   box-shadow: var(--shadow);
-  width: 95%;
+  width: 90%;
+  margin: 10px auto;
 }
 
 .card .fas {
@@ -586,7 +586,7 @@ hr {
     text-align: center;
     align-items: center;
     font-size: 1rem;
-    width: 200px;
+    width: 160px;
   }
 
   .fa-solid {
